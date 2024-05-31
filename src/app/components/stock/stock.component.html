@@ -1,0 +1,58 @@
+<!-- src/app/stock-list/stock-list.component.html -->
+<div class="stock-container">
+  <h2 class="stocks-title">Stocks List </h2>
+  <p-dialog header="Add Stock" [(visible)]="showDialog" [style]="{ width: '80vw', height: '500px'}">
+
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">
+            <i class="pi pi-user"></i>
+        </span>
+        <input pInputText placeholder="Id" />
+    </div>
+    
+    
+   
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">Price$</span>
+        <input type="text" pInputText placeholder="Input Price" />
+        <span class="p-inputgroup-addon">.00</span>
+    </div>
+    
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">Category</span>
+        <input type="text" pInputText placeholder="Input Category" />
+    </div>
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">Quantity</span>
+        <input type="text" pInputText placeholder="InputQuantity" />
+        
+    </div>
+
+
+    <div class="button-container">
+        <p-button  label="Submit" styleClass="p-button-raised"></p-button>
+        <p-button   label="Cancel" styleClass="p-button-raised p-button-secondary"></p-button>
+      </div>
+      
+
+</p-dialog>
+  
+
+<p-toolbar styleClass="mb-4 gap-2">
+    <ng-template pTemplate="left">
+        <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-success mr-2" (click)="openNew()"></button>
+    </ng-template>
+
+    
+</p-toolbar>
+
+<ul class="stock-list">
+  <li *ngFor="let product of products$ | async" class="stock-item">
+    <div class="stock-info">
+      {{ product.name }} - Quantity: {{ product.amount }}
+    </div>
+    <button class="details-button" (click)="viewDetails(product.id)">Détails</button>
+  </li>
+</ul>
+</div>
+  

@@ -1,0 +1,15 @@
+.p-inputgroup{
+    margin: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto; 
+  }
+  
+  .button-container p-button {
+    margin: 0 10px; 
+  }
+  

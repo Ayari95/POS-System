@@ -1,0 +1,88 @@
+.stocks-title {
+  text-align: center;                /* Centre le texte */
+  font-family: 'Arial, sans-serif';  /* Change la police */
+  font-size: 2.5rem;                 /* Augmente la taille de la police */
+  color: #333;                       /* Couleur du texte */
+  margin-top: 20px;                  /* Marge en haut */
+  margin-bottom: 20px;               /* Marge en bas */
+  padding: 10px;                     /* Padding autour du texte */
+  border-radius: 8px;                /* Coins arrondis */
+  background: linear-gradient(90deg, #4b6cb7, #182848); /* Dégradé de fond */
+  color: white;                     /* Couleur du texte */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+
+
+.stock-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #009879;
+    padding-bottom: 0.5rem;
+  }
+
+  .stock-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+      background-color: #f1f1f1;
+      transform: scale(1.02);
+    }
+
+    span {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .stock-list {
+    .stock-item {
+      flex-direction: column;
+      align-items: flex-start;
+
+      span {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

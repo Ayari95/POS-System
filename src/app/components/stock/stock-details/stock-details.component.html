@@ -1,0 +1,15 @@
+<p-toast></p-toast>
+<div *ngIf="stock">
+    <h2>Stock Details :<tr></tr>{{ stock.name }}</h2>
+    <p>ID: {{ stock.id }}</p>
+    <p>Prix: {{ stock.price }} EUR</p>
+    <p>Catégorie: {{ stock.category }}</p>
+    <img [src]="stock.image" [alt]="stock.name">
+  
+    <form [formGroup]="stockForm" (ngSubmit)="onSubmit()">
+      <label for="amount">Quantité:</label>
+      <input type="number" id="amount" formControlName="amount">
+      <button type="submit">Mettre à jour</button>
+    </form>
+  </div>
+  

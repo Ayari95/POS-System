@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="card-container">
+        <p-card header="Products Number">
+            <p class="m-0">{{stats[0]}}</p>
+        </p-card>
+        <p-card header="Clients Number">
+            <p class="m-0">{{stats[1]}}</p>
+        </p-card>
+        <p-card header="Categories Number">
+            <p class="m-0">{{stats[2]}}</p>
+        </p-card>
+        <p-card header=" Orders Number">
+            <p class="m-0">{{stats[3]}}</p>
+        </p-card>
+        <p-card header="Transactions Amount of this day">
+            <p class="m-0">{{stats[5]}}</p>
+        </p-card>
+        <p-card header="Transactions Amount of this week">
+            <p class="m-0">{{stats[6]}}</p>
+        </p-card>
+        <p-card header="Transactions Amount of this month">
+            <p class="m-0">{{stats[7]}}</p>
+        </p-card>
+        <p-card header=" Transactions Amount ">
+            <p class="m-0">{{stats[4]}} $</p>
+        </p-card>
+    </div>
+    <div class="chart-container">
+        <p-chart type="bar" [data]="basicData" [options]="basicOptions"></p-chart>
+    </div>
+        <p-chart type="radar" [data]="basicData" [options]="basicOptions"></p-chart>
+
+</div>

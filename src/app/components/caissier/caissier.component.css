@@ -1,0 +1,13 @@
+.m-0{
+    text-align: center;                /* Centre le texte */
+    font-family: 'Arial, sans-serif';  /* Change la police */
+    font-size: 2.5rem;                 /* Augmente la taille de la police */
+    color: #333;                       /* Couleur du texte */
+    margin-top: 20px;                  /* Marge en haut */
+    margin-bottom: 20px;               /* Marge en bas */
+    padding: 10px;                     /* Padding autour du texte */
+    border-radius: 8px;                /* Coins arrondis */
+    background: linear-gradient(90deg, #4b6cb7, #182848); /* Dégradé de fond */
+    color: white;                     /* Couleur du texte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}

@@ -1,0 +1,43 @@
+.full-background {
+  background: url('/assets/home.PNG') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh; /* Ajuste la hauteur à 100% de la vue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centre le texte */
+}
+
+.welcome-message {
+  background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec transparence */
+  padding: 20px; /* Ajoute du padding autour du texte */
+  border-radius: 10px; /* Bordures arrondies */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  max-width: 600px; /* Largeur maximale du message */
+}
+
+.welcome-message h1 {
+  color: #333; /* Couleur du texte pour l'en-tête */
+  margin-bottom: 10px; /* Espace en dessous de l'en-tête */
+}
+
+.welcome-message p {
+  color: #333; /* Couleur du texte */
+  font-weight: bold; /* Rend le texte en gras */
+  font-size: 16px; /* Taille de la police */
+}
+
+.scroll-to-top {
+  background-color: #5d0101; /* Couleur de fond personnalisée */
+  color: #ffffff; /* Couleur du texte */
+  padding: 10px 20px; /* Ajoute du padding pour le bouton */
+  cursor: pointer; /* Change le curseur au survol */
+  font-size: 16px; /* Taille de la police */
+  border-radius: 5px; /* Bordures arrondies */
+  border: none; /* Supprime la bordure par défaut */
+  margin-bottom: 20px; /* Espace en dessous du bouton */
+}
+
+.scroll-to-top:hover {
+  background-color: #910202; /* Couleur de fond au survol */
+}

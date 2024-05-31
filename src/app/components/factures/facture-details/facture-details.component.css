@@ -1,0 +1,37 @@
+.title{
+  text-align: center;                /* Centre le texte */
+  font-family: 'Arial, sans-serif';  /* Change la police */
+  font-size: 2.5rem;                 /* Augmente la taille de la police */
+  color: #333;                       /* Couleur du texte */
+  margin-top: 20px;                  /* Marge en haut */
+  margin-bottom: 20px;               /* Marge en bas */
+  padding: 10px;                     /* Padding autour du texte */
+  border-radius: 8px;                /* Coins arrondis */
+  background: linear-gradient(90deg, #4b6cb7, #182848); /* Dégradé de fond */
+  color: white;                     /* Couleur du texte */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+.invoice-details-container {
+    max-width: 700px; /* Largeur maximale du conteneur */
+    margin: 0 auto; /* Centrage horizontal */
+    padding: 20px; /* Espacement interne */
+    background-color: #f9f9f9; /* Couleur de fond */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    border: 1px solid #ddd; /* Bordure */
+  
+    h2 {
+      font-size: 2rem; /* Taille de police du titre */
+      color: #333; /* Couleur du texte */
+      margin-bottom: 20px; /* Marge en bas */
+      border-bottom: 2px solid #007bff; /* Bordure inférieure */
+      padding-bottom: 10px; /* Espacement interne en bas */
+    }
+  
+    p {
+      font-size: 1.2rem; /* Taille de police des paragraphes */
+      margin: 10px 0; /* Marge autour des paragraphes */
+      color: #555; /* Couleur du texte */
+    }
+  }
+  

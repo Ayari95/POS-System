@@ -1,0 +1,106 @@
+
+
+.titre1{
+text-align: center;                /* Centre le texte */
+font-family: 'Arial, sans-serif';  /* Change la police */
+font-size: 2.5rem;                 /* Augmente la taille de la police */
+color: #333;                       /* Couleur du texte */
+margin-top: 20px;                  /* Marge en haut */
+margin-bottom: 20px;               /* Marge en bas */
+padding: 10px;                     /* Padding autour du texte */
+border-radius: 8px;                /* Coins arrondis */
+background: linear-gradient(90deg, #4b6cb7, #182848); /* Dégradé de fond */
+color: white;                     /* Couleur du texte */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+:host {
+    display: block;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  li:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button.edit {
+    background-color: #595858;
+    color: white;
+  }
+  
+  button.edit:hover {
+    background-color: #adaaaa;
+  }
+  
+  button.delete {
+    background-color: #595858;
+    color: white;
+  }
+  
+  button.delete:hover {
+    background-color: #adaaaa;
+  }
+  
+  button.view {
+    background-color: #595858;
+    color: white;
+  }
+  
+  button.view:hover {
+    background-color: #adaaaa;
+  }
+  
+  button.add {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    font-size: 16px;
+  }
+  
+  button.add:hover {
+    background-color: #007bb5;
+  }
+  
+    

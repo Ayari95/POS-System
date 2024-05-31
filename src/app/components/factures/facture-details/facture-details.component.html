@@ -1,0 +1,18 @@
+
+<h2 class="title">Invoice Details </h2>
+<p-toolbar styleClass="mb-4 gap-2">
+  
+<ng-template pTemplate="right">
+  <p-fileUpload mode="basic" accept="image/*" [maxFileSize]="1000000" label="Import" chooseLabel="Import" class="mr-2 inline-block"></p-fileUpload>
+  <button pButton pRipple label="Export" icon="pi pi-upload" class="p-button-help"></button>
+</ng-template>
+</p-toolbar>
+
+<div class="invoice-details-container">
+    
+    <p><strong>ID:</strong> {{ invoice.id }}</p>
+    <p><strong>Client:</strong> {{ invoice.customerName}}</p>
+    <p><strong>Montant:</strong> {{ invoice.amount }}</p>
+    <p><strong>Date:</strong> {{ invoice.date }}</p>
+    <p><strong>Description:</strong> {{ invoice.description }}</p>
+  </div>
